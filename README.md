@@ -29,14 +29,14 @@
 ## 使用方式
 
 ### 1. Minimal 安裝腳本
-\`\`\`powershell
+```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File "\\AD\SYSVOL\scripts\Install-HiCOS_Client_Minimal.ps1"
-\`\`\`
+```
 
 ### 2. 版本收集腳本
-\`\`\`powershell
+```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File "\\AD\SYSVOL\scripts\Get-HiCOSVersion_GPO.ps1"
-\`\`\`
+```
 
 ## 注意事項
 1. **NAS 權限**  
@@ -47,15 +47,15 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File "\\AD\SYSVOL\scripts\Get
    - 若多臺電腦同時寫入同一份 CSV，可能造成檔案鎖定衝突。建議每臺電腦寫入單獨檔，再集中合併。
 
 ## 目錄結構建議
-\`\`\`
+```
 /HiCOS-Scripts
 ├─ Install-HiCOS_Client_Minimal.ps1
 ├─ Get-HiCOSVersion_GPO.ps1
 └─ README.md
-\`\`\`
+```
 
 ## 開發者資訊
-- 作者：YourName
+- 作者：Weng, Chun-Wang
 - 聯絡方式：youremail@example.com
 - GitHub：https://github.com/wengchunwang/HiCOS-Client
 
