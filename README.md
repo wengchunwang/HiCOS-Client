@@ -65,9 +65,3 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File "\\AD\SYSVOL\scripts\Get
 | 2025-09-27 | 2025.09.27.003 | Minimal 安裝 & 版本收集腳本更新，支援 NAS 容錯與核心類型物件 |
 | 2025-09-26 | 2025.09.26.001 | 初始版本，支援 GPO 安裝 & CSV 收集 |
 "
-
-# === 輸出 README.md ===
-$OutputPath = "C:\Temp\README.md"  # 可改成你想要的路徑
-$ReadmeContent | Out-File -FilePath $OutputPath -Encoding UTF8
-
-Write-Host "README.md 已輸出到：$OutputPath"
