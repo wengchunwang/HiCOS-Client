@@ -64,4 +64,3 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File "\\AD\SYSVOL\scripts\Get
 |------------|--------------|------|
 | 2025-09-27 | 2025.09.27.003 | Minimal 安裝 & 版本收集腳本更新，支援 NAS 容錯與核心類型物件 |
 | 2025-09-26 | 2025.09.26.001 | 初始版本，支援 GPO 安裝 & CSV 收集 |
-"
