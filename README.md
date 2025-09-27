@@ -43,8 +43,8 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File "\\AD\SYSVOL\scripts\Get
    - 確保電腦有寫入 NAS 的權限，否則版本收集腳本會切換到本地暫存。
 2. **GPO 受限語言模式**  
    - 版本收集腳本已改用核心類型 `[PSObject]`，可在 GPO Startup Script 下執行。
-3. **多台電腦同時寫入 NAS**  
-   - 若多台電腦同時寫入同一份 CSV，可能造成檔案鎖定衝突。建議每台電腦寫入單獨檔，再集中合併。
+3. **多臺電腦同時寫入 NAS**  
+   - 若多臺電腦同時寫入同一份 CSV，可能造成檔案鎖定衝突。建議每臺電腦寫入單獨檔，再集中合併。
 
 ## 目錄結構建議
 \`\`\`
@@ -57,7 +57,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File "\\AD\SYSVOL\scripts\Get
 ## 開發者資訊
 - 作者：YourName
 - 聯絡方式：youremail@example.com
-- GitHub：https://github.com/yourusername/HiCOS-Scripts
+- GitHub：https://github.com/wengchunwang/HiCOS-Client
 
 ## 版本紀錄
 | 日期       | 版本         | 說明 |
