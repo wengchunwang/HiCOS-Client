@@ -1,6 +1,6 @@
 # HiCOS Client 安裝與版本收集 Script
-
-**HiCOS 卡片管理工具是一種 CSP(Cryptography Service Provider),係提供IC 卡之憑證註冊至作業系統的工具,以利安全電子郵件或憑證應用應用系統使用密碼學之簽章或加密等功能,下載安裝後除 HiCOS 卡片管理工具外,並包含用戶端環境檢測工具、UP2Date Agent 等程式與相關手冊。
+- **HiCOS卡片管理工具與跨平臺網頁元件安裝及更新(請儘速更新)  [2025-09-15 內政部資訊服務司](https://moica.nat.gov.tw/news_in_17e9501c4f4000006dc2.html)
+- **HiCOS 卡片管理工具是一種 CSP(Cryptography Service Provider),係提供IC 卡之憑證註冊至作業系統的工具,以利安全電子郵件或憑證應用應用系統使用密碼學之簽章或加密等功能,下載安裝後除 HiCOS 卡片管理工具外,並包含用戶端環境檢測工具、UP2Date Agent 等程式與相關手冊。
 
 ## 專案說明
 本專案提供兩個主要功能：
@@ -11,7 +11,7 @@
    - 支援將安裝程式複製到本機暫存資料夾（C:\TEMP）後安裝。
    - 設計為 minimal，不產生 LOG 或 Debug 檔。
    - 適合透過 **GPO Startup Script** 部署。
-   - **安裝檔來源說明**：HiCOS_Client.exe 可自 [https://moica.nat.gov.tw/download_1.html](https://moica.nat.gov.tw/download_1.html) 下載 ZIP 後，自行解壓縮。
+   - **安裝檔來源說明**：HiCOS_Client.exe 可自 [MOICA內政部憑證管理中心-檔案下載](https://moica.nat.gov.tw/download_1.html) 下載 ZIP 後，自行解壓縮。
 
 2. **HiCOS 版本收集Script (`Get-HiCOSVersion_GPO.ps1`)**
    - 取得本機已安裝 HiCOS Client 的版本資訊（支援 32/64-bit 登錄檔）。
