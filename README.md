@@ -1,5 +1,7 @@
 # HiCOS Client 安裝與版本收集 Script
 
+**HiCOS 卡片管理工具是一種 CSP(Cryptography Service Provider),係提供IC 卡之憑證註冊至作業系統的工具,以利安全電子郵件或憑證應用應用系統使用密碼學之簽章或加密等功能,下載安裝後除 HiCOS 卡片管理工具外,並包含用戶端環境檢測工具、UP2Date Agent 等程式與相關手冊。
+
 ## 專案說明
 本專案提供兩個主要功能：
 
