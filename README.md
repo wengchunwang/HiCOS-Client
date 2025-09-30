@@ -9,6 +9,7 @@
    - 支援將安裝程式複製到本機暫存資料夾（C:\TEMP）後安裝。
    - 設計為 minimal，不產生 LOG 或 Debug 檔。
    - 適合透過 **GPO Startup Script** 部署。
+   - **安裝檔來源說明**：HiCOS_Client.exe 可自 [https://moica.nat.gov.tw/download_1.html](https://moica.nat.gov.tw/download_1.html) 下載 ZIP 後，自行解壓縮。
 
 2. **HiCOS 版本收集Script (`Get-HiCOSVersion_GPO.ps1`)**
    - 取得本機已安裝 HiCOS Client 的版本資訊（支援 32/64-bit 登錄檔）。
