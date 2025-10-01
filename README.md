@@ -5,11 +5,11 @@
 ## 專案說明
 本專案提供兩個主要功能：
 
-1. **HiCOS_Client Minimal 安裝Script (`Install-HiCOS_Client_Minimal.ps1`)**
+1. **HiCOS_Client 安裝Script (`Install-HiCOS_Client.ps1`)**
    - 檢查目標電腦是否已安裝 HiCOS Client。
    - 若未安裝或版本過舊，自動安裝指定版本。
    - 支援將安裝程式複製到本機暫存資料夾（C:\TEMP）後安裝。
-   - 設計為 minimal，不產生 LOG 或 Debug 檔。
+   - 設計為 minimal(`Install-HiCOS_Client_Minimal.ps1`)，不產生 LOG 或 Debug 檔。
    - 適合透過 **GPO Startup Script** 部署。
    - **安裝檔來源說明**：HiCOS_Client.exe 可自 [MOICA內政部憑證管理中心-檔案下載](https://moica.nat.gov.tw/download_1.html) 下載 ZIP 後，自行解壓縮。
 
