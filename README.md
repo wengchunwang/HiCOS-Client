@@ -1,4 +1,5 @@
 # HiCOS Client 安裝與版本收集 Script
+- **安裝檔來源說明**：HiCOS_Client.exe 可自 [MOICA內政部憑證管理中心-檔案下載](https://moica.nat.gov.tw/download_1.html) 下載後，自行解壓縮。
 - **HiCOS卡片管理工具與跨平臺網頁元件安裝及更新(請儘速更新)  [2025-09-15 內政部資訊服務司](https://moica.nat.gov.tw/news_in_17e9501c4f4000006dc2.html)
 - **HiCOS 卡片管理工具是一種 CSP(Cryptography Service Provider),係提供IC 卡之憑證註冊至作業系統的工具,以利安全電子郵件或憑證應用應用系統使用密碼學之簽章或加密等功能,下載安裝後除 HiCOS 卡片管理工具外,並包含用戶端環境檢測工具、UP2Date Agent 等程式與相關手冊。
 
@@ -9,9 +10,8 @@
    - 檢查目標電腦是否已安裝 HiCOS Client。
    - 若未安裝或版本過舊，自動安裝指定版本。
    - 支援將安裝程式複製到本機暫存資料夾（C:\TEMP）後安裝。
-   - 設計為 minimal(`Install-HiCOS_Client_Minimal.ps1`)，不產生 LOG 或 Debug 檔。
-   - 適合透過 **GPO Startup Script** 部署。
-   - **安裝檔來源說明**：HiCOS_Client.exe 可自 [MOICA內政部憑證管理中心-檔案下載](https://moica.nat.gov.tw/download_1.html) 下載 ZIP 後，自行解壓縮。
+   - 適合透過 **GPO Startup Script** 部署。   
+   - minimal (`Install-HiCOS_Client_Minimal.ps1`) 設計為不產生 LOG 或 Debug 檔。
 
 2. **HiCOS 版本收集Script (`Get-HiCOSVersion_GPO.ps1`)**
    - 取得本機已安裝 HiCOS Client 的版本資訊（支援 32/64-bit 登錄檔）。
@@ -26,9 +26,9 @@
    - 設計為核心類型物件，可在受限語言模式（GPO Startup Script）下安全執行。
 
 ## Script版本管理
-- `Install-HiCOS_Client.ps1` 版本：`2025.09.27.003`
-- `Install-HiCOS_Client_Minimal.ps1` 版本：`2025.09.27.003`
-- `Get-HiCOSVersion_GPO.ps1` 版本：`2025.09.27.003`
+- `Install-HiCOS_Client.ps1` 版本：`2025.10.01.010`
+- `Install-HiCOS_Client_Minimal.ps1` 版本：`2025.09.30.005`
+- `Get-HiCOSVersion_GPO.ps1` 版本：`2025.09.30.005`
 
 ## 使用方式
 
@@ -67,5 +67,6 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File "\\AD\SYSVOL\scripts\Get
 ## 版本紀錄
 | 日期       | 版本         | 說明 |
 |------------|--------------|------|
+| 2025-10-01 | 2025.10.01.010 | 優化：加入 InstallFiles 參數驗證 (001)；安裝成功後即時清理本地安裝檔 (210)；日誌訊息編碼重整，採用百位數分類法。 |
 | 2025-09-27 | 2025.09.27.003 | Minimal 安裝 & 版本收集Script更新，支援 NAS 容錯與核心類型物件 |
 | 2025-09-26 | 2025.09.26.001 | 初始版本，支援 GPO 安裝 & CSV 收集 |
