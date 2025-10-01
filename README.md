@@ -26,14 +26,15 @@
    - 設計為核心類型物件，可在受限語言模式（GPO Startup Script）下安全執行。
 
 ## Script版本管理
+- `Install-HiCOS_Client.ps1` 版本：`2025.09.27.003`
 - `Install-HiCOS_Client_Minimal.ps1` 版本：`2025.09.27.003`
 - `Get-HiCOSVersion_GPO.ps1` 版本：`2025.09.27.003`
 
 ## 使用方式
 
-### 1. Minimal 安裝Script
+### 1. 安裝Script
 ```powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "\\AD\SYSVOL\scripts\Install-HiCOS_Client_Minimal.ps1"
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "\\AD\SYSVOL\scripts\Install-HiCOS_Client.ps1" -InstallFiles "\\NAS\Path\HiCOS_Client.exe"
 ```
 
 ### 2. 版本收集Script
@@ -52,6 +53,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File "\\AD\SYSVOL\scripts\Get
 ## 目錄結構建議
 ```
 /HiCOS-Scripts
+├─ Install-HiCOS_Client.ps1
 ├─ Install-HiCOS_Client_Minimal.ps1
 ├─ Get-HiCOSVersion_GPO.ps1
 └─ README.md
