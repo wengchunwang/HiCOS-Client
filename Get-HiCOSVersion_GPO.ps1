@@ -17,14 +17,14 @@ param(
 )
 
 # === 版本號 ===
-$ScriptVersion = "2025.09.30.005"
+$ScriptVersion = "2025.10.15.006"
 
 # === 控制輸出偏好 ===
 $WarningPreference = "SilentlyContinue"
 $ErrorActionPreference = "Stop"
 
 # === 路徑設定 ===
-$TempPath = "C:\Temp"
+$LocalTempPath = "$env:SystemDrive\TEMP"
 $FileName = "HiCOS_Versions_$(Get-Date -Format yyyyMMdd).csv"
 
 # 預設日誌檔案路徑 (優先使用 NAS)
@@ -36,14 +36,14 @@ try {
         New-Item -Path $NASPath -ItemType Directory -Force | Out-Null
     }
 } catch {
-    Write-Warning "無法存取或建立 NAS 資料夾 $NASPath，切換至 $TempPath。"
+    Write-Warning "無法存取或建立 NAS 資料夾 $NASPath，切換至 $LocalTempPath。"
     try {
-        if (-not (Test-Path $TempPath)) {
-            New-Item -Path $TempPath -ItemType Directory -Force | Out-Null
+        if (-not (Test-Path $LocalTempPath)) {
+            New-Item -Path $LocalTempPath -ItemType Directory -Force | Out-Null
         }
-        $LogFile = Join-Path $TempPath $FileName
+        $LogFile = Join-Path $LocalTempPath $FileName
     } catch {
-        Write-Error "無法建立本地暫存資料夾 $TempPath，腳本終止。"
+        Write-Error "無法建立本地暫存資料夾 $LocalTempPath，腳本終止。"
         exit 2
     }
 }
