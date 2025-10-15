@@ -28,7 +28,7 @@ $WarningPreference = "SilentlyContinue"
 $ErrorActionPreference = "Stop"
 
 # === 本機暫存路徑 ===
-$LocalTempPath  = "C:\TEMP"
+$LocalTempPath  = "$env:SystemDrive\TEMP"
 $LocalInstaller = Join-Path $LocalTempPath "HiCOS_Client.exe"
 
 # === 安裝重試次數 ===
