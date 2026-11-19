@@ -1,4 +1,4 @@
-# 🧩 HiCOS Client 自動安裝與更新Script (PowerShell)
+# 🧩 HiCOS Client 自動安裝與更新 Script (使用 PowerShell)
 
 ## 🎯 專案簡介
 本 PowerShell Script用於 **自動化企業環境中 HiCOS Client 的安裝、更新與版本管理**。  
@@ -7,10 +7,10 @@ Script具備高容錯性，並提供詳細的日誌記錄與遠端備份機制�
 
 ### 官方來源與說明
 - **安裝檔來源**：
-- [MOICA 內政部憑證管理中心 - 檔案下載](https://moica.nat.gov.tw/download_1.html)  
+  - [MOICA 內政部憑證管理中心 - 檔案下載](https://moica.nat.gov.tw/download_1.html)  
 - **最新公告**：
-- [中華電信已釋出【HiCOS卡片管理元件3.2.9版】（2026-10-08）](https://moica.nat.gov.tw/news_in_1a11a9d0f440000054f0.html)
-- [HiCOS卡片管理工具與跨平臺網頁元件更新（2025-09-15）](https://moica.nat.gov.tw/news_in_17e9501c4f4000006dc2.html)
+  - [中華電信已釋出【HiCOS卡片管理元件3.2.9版】（2026-10-08）](https://moica.nat.gov.tw/news_in_1a11a9d0f440000054f0.html)
+  - [HiCOS卡片管理工具與跨平臺網頁元件更新（2025-09-15）](https://moica.nat.gov.tw/news_in_17e9501c4f4000006dc2.html)
 - **HiCOS 功能說明**：  
   HiCOS 卡片管理工具為 CSP（Cryptography Service Provider），提供 IC 卡憑證註冊至作業系統之功能，支援電子郵件簽章與加密應用。下載後包含：
   - HiCOS 卡片管理工具  
